@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #e2e8f0;
+    background: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3b82f6;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #60a5fa;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    border: 1px solid #334155;
+}
+
+.section-title {
+    color: #60a5fa;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 0.5rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background: #1e3a8a;
+    color: #93c5fd;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+.contact-info a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+.contact-info a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+strong {
+    color: #93c5fd;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+    }
+}
+
+/* Subtle hover effects */
+.section:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
